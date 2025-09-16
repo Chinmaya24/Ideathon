@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DSATM Ideathon Pass</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .pass-card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 450px;
+      width: 100%;
+    }
+    .pass-card h2 {
+      color: #0d47a1;
+      margin-bottom: 15px;
+    }
+    .qr {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pass-card">
+    <h2>🎟️ DSATM Ideathon Pass</h2>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Institution:</strong> {{ institution }}</p>
+    <p><em>Show this pass at the venue for entry</em></p>
+
+    <!-- Placeholder QR -->
+    <div class="qr">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data={{name}}-{{institution}}&size=150x150" alt="QR Code">
+    </div>
+
+    <a href="/" class="btn btn-primary mt-3">Back to Home</a>
+  </div>
+</body>
+</html>

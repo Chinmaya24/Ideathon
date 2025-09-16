@@ -1,0 +1,58 @@
+/* Navbar - solid clean color */
+.custom-navbar {
+  background-color: #0d47a1; /* deep blue */
+  padding: 12px 0;
+  transition: background 0.3s ease;
+}
+
+/* Nav links */
+.nav-link {
+  color: #f8f9fa !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #ff9800 !important; /* warm orange */
+  border-bottom: 2px solid #ff9800;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-warning {
+  background-color: #ff9800;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.btn-warning:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+/* Section Headings */
+h2 {
+  color: #0d47a1;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  margin: 8px auto 0;
+  background: #ff9800;
+  border-radius: 3px;
+}
